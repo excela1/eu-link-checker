@@ -1,95 +1,44 @@
 {
-  "scanned_at": "2026-09-17T22:39:17.870Z",
-  "previous_scan": null,
+  "scanned_at": "2026-09-17T23:02:47.243Z",
+  "previous_scan": "2026-09-17T22:39:17.870Z",
   "links_checked": 196834,
   "unique_links": 17007,
-  "confirmed_dead": 17,
+  "confirmed_dead": 22,
   "new_since_last_run": [
     {
-      "url": "https://www.excel-university.com/wp-content/plugins/bb-plugin/fonts/fontawesome/5.15.4/webfonts/fa-regular-400.woff2",
-      "status": "404",
-      "internal": true,
-      "pages_affected": 55,
+      "url": "https://hubs.ly/Q03vvw5j0",
+      "status": "400",
+      "internal": false,
+      "pages_affected": 5,
       "found_on": [
-        "/ai-training/",
-        "/aicpa/",
-        "/apr-vs-apy-in-excel-what-the-effect-function-reveals/",
-        "/articles/cal-cpa/mind-blown/",
-        "/categorize-credit-card-charges-copilot-function/",
-        "/category/features/",
-        "/category/info/",
-        "/center-across-selection-qat/",
-        "/combine-rows-into-a-delimited-list/",
-        "/combine-tables-with-different-column-order/"
+        "/investment-evaluation-toolkit/",
+        "/loan-calculations-from-first-payment-to-payoff/",
+        "/modified-internal-rate-of-return-mirr/",
+        "/money-math-five/",
+        "/pivottable-auto-refresh/"
       ]
     },
     {
-      "url": "https://www.excel-university.com/contact-us",
-      "status": "404",
-      "internal": true,
-      "pages_affected": 2,
-      "found_on": [
-        "/sp-credit-card-email/",
-        "/sp-invoices-2/"
-      ]
-    },
-    {
-      "url": "https://www.excel-university.com/wp-content/uploads/Copilot_Ex",
-      "status": "404",
-      "internal": true,
-      "pages_affected": 1,
-      "found_on": [
-        "/yt_ye9ev32jh0k/"
-      ]
-    },
-    {
-      "url": "https://www.excel-university.com/wp-content/uploads/Pivot*Pct*Running_download.xlsx",
-      "status": "404",
-      "internal": true,
-      "pages_affected": 1,
-      "found_on": [
-        "/yt_w25bbmths6m/"
-      ]
-    },
-    {
-      "url": "http://wicpa.org/Content/Files/PDF/Calliope/Summer2011/SumNoMore.pdf",
-      "status": "404",
+      "url": "http://excel-fsm.pxf.io/c/1334247/505863/8682",
+      "status": "400",
       "internal": false,
       "pages_affected": 1,
       "found_on": [
-        "/quickly-insert-the-sum-function/"
+        "/pivottable-calendar/"
       ]
     },
     {
-      "url": "http://www.burning-glass.com/wp-content/uploads/Digital_Edge_report_2017_final.pdf",
-      "status": "404",
+      "url": "http://www.modeloff.com/",
+      "status": "503",
       "internal": false,
       "pages_affected": 1,
       "found_on": [
-        "/excel-certification/"
+        "/invitation-to-the-excel-modeling-world-championships-2014/"
       ]
     },
     {
-      "url": "http://www.calcpa.org/~/media/california%20cpa%20magazine/files/0714_excel.ashx",
-      "status": "404",
-      "internal": false,
-      "pages_affected": 1,
-      "found_on": [
-        "/list-comparisons-calcpa-magazine-article/"
-      ]
-    },
-    {
-      "url": "http://www.calcpa.org/MSvideo",
-      "status": "404",
-      "internal": false,
-      "pages_affected": 1,
-      "found_on": [
-        "/articles/cal-cpa/be-excel-lent/"
-      ]
-    },
-    {
-      "url": "http://www.creativesolutions.thomson.com/",
-      "status": "no such host",
+      "url": "http://www.xdrive.com/",
+      "status": "TLS failure",
       "internal": false,
       "pages_affected": 1,
       "found_on": [
@@ -97,75 +46,12 @@
       ]
     },
     {
-      "url": "http://www.excelguru.ca/blog/2014/11/19/combine-multiple-worksheets-using-power-query/",
-      "status": "404",
+      "url": "https://www.amazon.com/s?k=excel+university+lenning",
+      "status": "503",
       "internal": false,
       "pages_affected": 1,
       "found_on": [
-        "/retrieve-values-from-many-workbooks/"
-      ]
-    },
-    {
-      "url": "http://www.ike.com/",
-      "status": "connection refused",
-      "internal": false,
-      "pages_affected": 1,
-      "found_on": [
-        "/articles/journal-of-acct/get-the-word-out/"
-      ]
-    },
-    {
-      "url": "http://www.journalofaccountancy.com/Issues/2014/Apr/Excel-mapping-20138815.htm",
-      "status": "404",
-      "internal": false,
-      "pages_affected": 1,
-      "found_on": [
-        "/reports/"
-      ]
-    },
-    {
-      "url": "http://www.microsoft.com/en-us/download/details.aspx?id=15011",
-      "status": "404",
-      "internal": false,
-      "pages_affected": 1,
-      "found_on": [
-        "/perform-approximate-match-and-fuzzy-lookup-in-excel/"
-      ]
-    },
-    {
-      "url": "http://www.weboffice.com/",
-      "status": "no such host",
-      "internal": false,
-      "pages_affected": 1,
-      "found_on": [
-        "/articles/journal-of-acct/get-the-word-out/"
-      ]
-    },
-    {
-      "url": "https://itunes.apple.com/us/book/id699343379",
-      "status": "404",
-      "internal": false,
-      "pages_affected": 1,
-      "found_on": [
-        "/excel-university-volume-2-now-available/"
-      ]
-    },
-    {
-      "url": "https://podcasts.apple.com/us/podcast/episode-42-from-cpa-to-excel-mvp-with-jeff-lenning/id1718453918?i=1000674661144",
-      "status": "404",
-      "internal": false,
-      "pages_affected": 1,
-      "found_on": [
-        "/media/"
-      ]
-    },
-    {
-      "url": "https://www.geniussheets.com/pricing/?lmref=C42xAQ",
-      "status": "404",
-      "internal": false,
-      "pages_affected": 1,
-      "found_on": [
-        "/easily-create-and-update-excel-reports-from-quickbooks/"
+        "/book/"
       ]
     }
   ],
@@ -175,7 +61,7 @@
       "url": "https://www.excel-university.com/wp-content/plugins/bb-plugin/fonts/fontawesome/5.15.4/webfonts/fa-regular-400.woff2",
       "status": "404",
       "internal": true,
-      "pages_affected": 55,
+      "pages_affected": 54,
       "found_on": [
         "/ai-training/",
         "/aicpa/",
@@ -215,6 +101,28 @@
       "pages_affected": 1,
       "found_on": [
         "/yt_w25bbmths6m/"
+      ]
+    },
+    {
+      "url": "https://hubs.ly/Q03vvw5j0",
+      "status": "400",
+      "internal": false,
+      "pages_affected": 5,
+      "found_on": [
+        "/investment-evaluation-toolkit/",
+        "/loan-calculations-from-first-payment-to-payoff/",
+        "/modified-internal-rate-of-return-mirr/",
+        "/money-math-five/",
+        "/pivottable-auto-refresh/"
+      ]
+    },
+    {
+      "url": "http://excel-fsm.pxf.io/c/1334247/505863/8682",
+      "status": "400",
+      "internal": false,
+      "pages_affected": 1,
+      "found_on": [
+        "/pivottable-calendar/"
       ]
     },
     {
@@ -299,8 +207,26 @@
       ]
     },
     {
+      "url": "http://www.modeloff.com/",
+      "status": "503",
+      "internal": false,
+      "pages_affected": 1,
+      "found_on": [
+        "/invitation-to-the-excel-modeling-world-championships-2014/"
+      ]
+    },
+    {
       "url": "http://www.weboffice.com/",
       "status": "no such host",
+      "internal": false,
+      "pages_affected": 1,
+      "found_on": [
+        "/articles/journal-of-acct/get-the-word-out/"
+      ]
+    },
+    {
+      "url": "http://www.xdrive.com/",
+      "status": "TLS failure",
       "internal": false,
       "pages_affected": 1,
       "found_on": [
@@ -323,6 +249,15 @@
       "pages_affected": 1,
       "found_on": [
         "/media/"
+      ]
+    },
+    {
+      "url": "https://www.amazon.com/s?k=excel+university+lenning",
+      "status": "503",
+      "internal": false,
+      "pages_affected": 1,
+      "found_on": [
+        "/book/"
       ]
     },
     {
@@ -378,9 +313,9 @@
     }
   ],
   "suppressed": {
-    "bot_protection": 38,
-    "reader_comments": 22,
+    "bot_protection": 43,
+    "reader_comments": 23,
     "not_real_urls": 9,
-    "failed_confirmation": 28
+    "failed_confirmation": 5
   }
 }
