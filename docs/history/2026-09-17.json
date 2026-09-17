@@ -1,67 +1,23 @@
 {
-  "scanned_at": "2026-09-17T23:02:47.243Z",
-  "previous_scan": "2026-09-17T22:39:17.870Z",
+  "scanned_at": "2026-09-17T23:06:33.285Z",
+  "previous_scan": "2026-09-17T23:02:47.243Z",
   "links_checked": 196834,
   "unique_links": 17007,
-  "confirmed_dead": 22,
-  "new_since_last_run": [
-    {
-      "url": "https://hubs.ly/Q03vvw5j0",
-      "status": "400",
-      "internal": false,
-      "pages_affected": 5,
-      "found_on": [
-        "/investment-evaluation-toolkit/",
-        "/loan-calculations-from-first-payment-to-payoff/",
-        "/modified-internal-rate-of-return-mirr/",
-        "/money-math-five/",
-        "/pivottable-auto-refresh/"
-      ]
-    },
-    {
-      "url": "http://excel-fsm.pxf.io/c/1334247/505863/8682",
-      "status": "400",
-      "internal": false,
-      "pages_affected": 1,
-      "found_on": [
-        "/pivottable-calendar/"
-      ]
-    },
-    {
-      "url": "http://www.modeloff.com/",
-      "status": "503",
-      "internal": false,
-      "pages_affected": 1,
-      "found_on": [
-        "/invitation-to-the-excel-modeling-world-championships-2014/"
-      ]
-    },
-    {
-      "url": "http://www.xdrive.com/",
-      "status": "TLS failure",
-      "internal": false,
-      "pages_affected": 1,
-      "found_on": [
-        "/articles/journal-of-acct/get-the-word-out/"
-      ]
-    },
-    {
-      "url": "https://www.amazon.com/s?k=excel+university+lenning",
-      "status": "503",
-      "internal": false,
-      "pages_affected": 1,
-      "found_on": [
-        "/book/"
-      ]
-    }
+  "confirmed_dead": 17,
+  "new_since_last_run": [],
+  "resolved_since_last_run": [
+    "https://hubs.ly/Q03vvw5j0",
+    "http://excel-fsm.pxf.io/c/1334247/505863/8682",
+    "http://www.modeloff.com/",
+    "http://www.xdrive.com/",
+    "https://www.amazon.com/s?k=excel+university+lenning"
   ],
-  "resolved_since_last_run": [],
   "all_dead": [
     {
       "url": "https://www.excel-university.com/wp-content/plugins/bb-plugin/fonts/fontawesome/5.15.4/webfonts/fa-regular-400.woff2",
       "status": "404",
       "internal": true,
-      "pages_affected": 54,
+      "pages_affected": 55,
       "found_on": [
         "/ai-training/",
         "/aicpa/",
@@ -101,28 +57,6 @@
       "pages_affected": 1,
       "found_on": [
         "/yt_w25bbmths6m/"
-      ]
-    },
-    {
-      "url": "https://hubs.ly/Q03vvw5j0",
-      "status": "400",
-      "internal": false,
-      "pages_affected": 5,
-      "found_on": [
-        "/investment-evaluation-toolkit/",
-        "/loan-calculations-from-first-payment-to-payoff/",
-        "/modified-internal-rate-of-return-mirr/",
-        "/money-math-five/",
-        "/pivottable-auto-refresh/"
-      ]
-    },
-    {
-      "url": "http://excel-fsm.pxf.io/c/1334247/505863/8682",
-      "status": "400",
-      "internal": false,
-      "pages_affected": 1,
-      "found_on": [
-        "/pivottable-calendar/"
       ]
     },
     {
@@ -207,26 +141,8 @@
       ]
     },
     {
-      "url": "http://www.modeloff.com/",
-      "status": "503",
-      "internal": false,
-      "pages_affected": 1,
-      "found_on": [
-        "/invitation-to-the-excel-modeling-world-championships-2014/"
-      ]
-    },
-    {
       "url": "http://www.weboffice.com/",
       "status": "no such host",
-      "internal": false,
-      "pages_affected": 1,
-      "found_on": [
-        "/articles/journal-of-acct/get-the-word-out/"
-      ]
-    },
-    {
-      "url": "http://www.xdrive.com/",
-      "status": "TLS failure",
       "internal": false,
       "pages_affected": 1,
       "found_on": [
@@ -249,15 +165,6 @@
       "pages_affected": 1,
       "found_on": [
         "/media/"
-      ]
-    },
-    {
-      "url": "https://www.amazon.com/s?k=excel+university+lenning",
-      "status": "503",
-      "internal": false,
-      "pages_affected": 1,
-      "found_on": [
-        "/book/"
       ]
     },
     {
@@ -313,9 +220,9 @@
     }
   ],
   "suppressed": {
-    "bot_protection": 43,
-    "reader_comments": 23,
+    "bot_protection": 38,
+    "reader_comments": 22,
     "not_real_urls": 9,
-    "failed_confirmation": 5
+    "failed_confirmation": 28
   }
 }

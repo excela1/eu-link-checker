@@ -144,7 +144,14 @@ async function confirmDead(url) {
       });
       if (res.status < 400) return false;                 // alive
       if (BLOCKED_CODES.has(res.status)) return false;    // refused a robot, not dead
-      if (res.status >= 500) continue;                    // maybe transient, retry
+      if (res.status >= 500) {
+        // A 5xx means the server answered - the host exists and is serving.
+        // That is not the same as content being gone, and big sites (Amazon)
+        // hand 503s to datacenter IPs all day. Never call a 5xx dead; leave it
+        // in `review` where it is visible but generates no tasks.
+        if (attempt === 2) return false;
+        continue;
+      }
       if (DEAD_CODES.has(res.status)) return true;        // genuinely gone
       return true;
     } catch {
@@ -249,15 +256,39 @@ for (const rec of candidates) {
   if (ugcUrls.has(rec.url) && !rec.internal) { rec.bucket = "user_generated"; ugcCount++; }
 }
 
-// --- stage 3: confirm every remaining dead candidate ------------------------
-const toConfirm = [...findings.values()].filter((r) => r.bucket === "dead");
-console.error(`Confirming ${toConfirm.length} dead candidates...`);
+// --- load previous run BEFORE confirming --------------------------------
+// A `review` item that failed last week is a promotion candidate, and it has
+// to face the same confirmation pass as everything else. Promoting straight
+// to `dead` would let 5xx/odd-4xx findings reach the agent without ever being
+// re-checked - which is exactly the bug this ordering fixes.
+let prev = null;
+if (existsSync(LATEST)) {
+  try { prev = JSON.parse(readFileSync(LATEST, "utf8")); } catch { /* first run */ }
+}
+const prevDead = new Set((prev?.all_dead ?? []).map((d) => d.url));
+const prevReview = new Set((prev?.needs_review ?? []).map((d) => d.url));
+
+// --- stage 3: confirm every dead candidate AND every promotion candidate ----
+const toConfirm = [...findings.values()].filter(
+  (r) => r.bucket === "dead" || (r.bucket === "review" && prevReview.has(r.url))
+);
+console.error(`Confirming ${toConfirm.length} candidates...`);
 const verdicts = await pool(toConfirm, 4, async (r) => confirmDead(r.url));
 let demoted = 0;
+let promotedCount = 0;
 toConfirm.forEach((r, i) => {
-  if (!verdicts[i]) { r.bucket = "false_positive"; demoted++; }
+  const wasReview = r.bucket === "review";
+  if (verdicts[i]) {
+    // Failed a second week AND failed the careful re-check.
+    if (wasReview) { r.bucket = "dead"; promotedCount++; }
+  } else if (!wasReview) {
+    r.bucket = "false_positive";
+    demoted++;
+  }
+  // A review item that survives the re-check simply stays in review.
 });
-console.error(`  confirmed dead: ${toConfirm.length - demoted}, demoted: ${demoted}`);
+console.error(`  confirmed dead: ${toConfirm.length - demoted}, demoted: ${demoted}, ` +
+              `promoted from review: ${promotedCount}`);
 
 // ---------------------------------------------------------------------------
 const bucketed = { dead: [], blocked: [], review: [], user_generated: [], false_positive: [] };
@@ -280,17 +311,9 @@ const byImpact = (a, b) =>
 for (const k of Object.keys(bucketed)) bucketed[k].sort(byImpact);
 
 // --- diff against the previous run -----------------------------------------
-let prev = null;
-if (existsSync(LATEST)) {
-  try { prev = JSON.parse(readFileSync(LATEST, "utf8")); } catch { /* first run */ }
-}
-const prevDead = new Set((prev?.all_dead ?? []).map((d) => d.url));
-const prevReview = new Set((prev?.needs_review ?? []).map((d) => d.url));
-
-// A 5xx on one run is often transient. Promote to dead only if it also failed
-// last week - that turns a blip into a signal.
-const promoted = bucketed.review.filter((d) => prevReview.has(d.url));
-const allDead = [...bucketed.dead, ...promoted].sort(byImpact);
+// Promotion already happened above, before confirmation, so `bucketed.dead`
+// is the complete list. Nothing is merged in after the fact.
+const allDead = bucketed.dead;
 
 const newSince = allDead.filter((d) => !prevDead.has(d.url));
 const resolved = [...prevDead].filter((u) => !allDead.some((d) => d.url === u));
