@@ -1,0 +1,64 @@
+name: Dead link scan
+
+on:
+  schedule:
+    # Sundays 08:00 UTC. The ClickUp agent reads the result on Monday,
+    # so the scan is always finished well before anything looks at it.
+    - cron: "0 8 * * 0"
+  workflow_dispatch:
+
+# Never let two scans race each other into the same commit.
+concurrency:
+  group: link-scan
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Expand sitemap into page list
+        run: node scripts/collect-urls.mjs > urls.txt
+
+      - name: Restore lychee cache
+        uses: actions/cache@v4
+        with:
+          path: .lycheecache
+          key: lychee-${{ github.run_id }}
+          restore-keys: lychee-
+
+      - name: Check links
+        uses: lycheeverse/lychee-action@v2
+        with:
+          args: --config lychee.toml --no-progress --cache --files-from urls.txt
+          format: json
+          output: lychee-full.json
+          # Broken links are the expected output, not a build failure. If this
+          # were `true` the job would go red every week and you'd learn to
+          # ignore it.
+          fail: false
+
+      - name: Build curated report
+        run: node scripts/build-report.mjs lychee-full.json
+
+      - name: Commit report
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add docs/
+          if git diff --staged --quiet; then
+            echo "No change in findings since last run."
+          else
+            git commit -m "Dead link scan $(date -u +%Y-%m-%d)"
+            git push
+          fi

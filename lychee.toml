@@ -1,0 +1,45 @@
+# lychee configuration for excel-university.com
+#
+# NOTE: we deliberately keep bot-blocked and auth-gated responses IN the raw
+# output rather than filtering them here. scripts/build-report.mjs classifies
+# them into `blocked` / `review` buckets. Only things that are genuinely gone
+# reach the agent. Tuning noise categories happens in one place: that script.
+#
+# This file excludes only things that are NOT REAL LINKS at all.
+
+# Be a good citizen toward Lightning Base.
+max_concurrency = 16
+timeout = 20
+max_retries = 2
+retry_wait_time = 2
+
+user_agent = "ExcelUniversity-LinkChecker/1.0 (+https://github.com/excela1/eu-link-checker)"
+
+# Follow redirects; a 301 to a working page is not a dead link.
+max_redirects = 10
+
+# Don't check mailto:/tel:
+include_mail = false
+
+exclude = [
+  # Cloudflare email obfuscation - these are not links, they're decoys.
+  '^https?://(www\.)?excel-university\.com/cdn-cgi/',
+
+  # WordPress form endpoints. POST-only; 405 on GET is correct behavior.
+  '/wp-comments-post\.php',
+  '/wp-login\.php',
+  '/xmlrpc\.php',
+
+  # WP REST API discovery tags in <head>. Auth-gated by design, never
+  # user-facing, and present on literally every page.
+  '/wp-json/',
+
+  # Feed/oEmbed discovery tags - machine endpoints, not content links.
+  '/feed/?$',
+  '/embed/?$',
+  'oembed',
+
+  # Fragment-only and JS pseudo-links.
+  '^javascript:',
+  '^#',
+]

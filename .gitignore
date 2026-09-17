@@ -1,0 +1,6 @@
+node_modules/
+.lycheecache
+tmp/
+urls.txt
+lychee-raw.json
+*.log
