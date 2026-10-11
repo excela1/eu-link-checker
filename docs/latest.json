@@ -1,14 +1,11 @@
 {
-  "scanned_at": "2026-09-27T08:15:53.397Z",
-  "previous_scan": "2026-09-20T08:19:14.505Z",
-  "links_checked": 197191,
-  "unique_links": 16998,
+  "scanned_at": "2026-10-11T08:16:09.200Z",
+  "previous_scan": "2026-09-27T08:15:53.397Z",
+  "links_checked": 197622,
+  "unique_links": 17016,
   "confirmed_dead": 11,
   "new_since_last_run": [],
-  "resolved_since_last_run": [
-    "https://www.excel-university.com/reports/:censored:32:e471e4a74c:/blog",
-    "https://www.excel-university.com/reports/:censored:32:e471e4a74c:/wp-content/uploads/SUMIFS-vs-PivotTables1.xlsx"
-  ],
+  "resolved_since_last_run": [],
   "all_dead": [
     {
       "url": "https://www.excel-university.com/perform-approximate-match-and-fuzzy-lookup-in-excel/:censored:32:e471e4a74c:/wp-content/uploads/20130411a.png",
@@ -134,15 +131,6 @@
       ]
     },
     {
-      "url": "https://thecfoproject.com/start-a-cfo-service?utm_source=excel-university&utm_medium=3N9W7QJ",
-      "status": "502",
-      "internal": false,
-      "pages_affected": 1,
-      "found_on": [
-        "/compare-two-columns-with-microsoft-excel-power-query/"
-      ]
-    },
-    {
       "url": "https://www.amazon.com/s?k=excel+university+lenning",
       "status": "503",
       "internal": false,
@@ -150,12 +138,21 @@
       "found_on": [
         "/book/"
       ]
+    },
+    {
+      "url": "https://www.mothresource.com/196-19-1-39.html",
+      "status": "502",
+      "internal": false,
+      "pages_affected": 1,
+      "found_on": [
+        "/dashboard-course/"
+      ]
     }
   ],
   "suppressed": {
-    "bot_protection": 43,
-    "reader_comments": 22,
+    "bot_protection": 41,
+    "reader_comments": 21,
     "not_real_urls": 9,
-    "failed_confirmation": 2
+    "failed_confirmation": 1
   }
 }

@@ -1,7 +1,7 @@
 # Dead link report
 
-**Scanned:** 2026-09-27T08:15:53.397Z
-**Links checked:** 197191 (16998 unique)
+**Scanned:** 2026-10-11T08:16:09.200Z
+**Links checked:** 197622 (17016 unique)
 **Confirmed dead:** 11
 
 ## New since last run (0)
@@ -30,8 +30,8 @@ _None._
 |---|---|---|---|
 | 400 | https://hubs.ly/Q03vvw5j0 | 5 | /investment-evaluation-toolkit/ |
 | 400 | http://excel-fsm.pxf.io/c/1334247/505863/8682 | 1 | /pivottable-calendar/ |
-| 502 | https://thecfoproject.com/start-a-cfo-service?utm_source=excel-university&utm_medium=3N9W7QJ | 1 | /compare-two-columns-with-microsoft-excel-power-query/ |
 | 503 | https://www.amazon.com/s?k=excel+university+lenning | 1 | /book/ |
+| 502 | https://www.mothresource.com/196-19-1-39.html | 1 | /dashboard-course/ |
 
 ---
 
@@ -39,7 +39,7 @@ _None._
 
 | Reason | Count |
 |---|---|
-| Bot protection (401/403/405/429/999) | 43 |
-| Reader comment links | 22 |
+| Bot protection (401/403/405/429/999) | 41 |
+| Reader comment links | 21 |
 | Not real URLs (`http://n/a` etc.) | 9 |
-| Failed confirmation re-check | 2 |
+| Failed confirmation re-check | 1 |
