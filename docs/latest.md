@@ -1,7 +1,7 @@
 # Dead link report
 
-**Scanned:** 2026-10-11T08:16:09.200Z
-**Links checked:** 197622 (17016 unique)
+**Scanned:** 2026-10-18T08:15:11.247Z
+**Links checked:** 197786 (17037 unique)
 **Confirmed dead:** 11
 
 ## New since last run (0)
@@ -24,14 +24,13 @@ _None._
 | TLS failure | http://www.xdrive.com/ | 1 | /articles/journal-of-acct/get-the-word-out/ |
 | 404 | https://www.microsoft.com/en-us/download/details.aspx?id=15011 | 1 | /perform-approximate-match-and-fuzzy-lookup-in-excel/ |
 
-## Needs review - 5xx, promoted if still failing next run (4)
+## Needs review - 5xx, promoted if still failing next run (3)
 
 | Status | Link | Pages | Example |
 |---|---|---|---|
 | 400 | https://hubs.ly/Q03vvw5j0 | 5 | /investment-evaluation-toolkit/ |
 | 400 | http://excel-fsm.pxf.io/c/1334247/505863/8682 | 1 | /pivottable-calendar/ |
 | 503 | https://www.amazon.com/s?k=excel+university+lenning | 1 | /book/ |
-| 502 | https://www.mothresource.com/196-19-1-39.html | 1 | /dashboard-course/ |
 
 ---
 
@@ -39,7 +38,7 @@ _None._
 
 | Reason | Count |
 |---|---|
-| Bot protection (401/403/405/429/999) | 41 |
-| Reader comment links | 21 |
+| Bot protection (401/403/405/429/999) | 50 |
+| Reader comment links | 20 |
 | Not real URLs (`http://n/a` etc.) | 9 |
 | Failed confirmation re-check | 1 |

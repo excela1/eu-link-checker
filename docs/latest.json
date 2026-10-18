@@ -1,8 +1,8 @@
 {
-  "scanned_at": "2026-10-11T08:16:09.200Z",
-  "previous_scan": "2026-09-27T08:15:53.397Z",
-  "links_checked": 197622,
-  "unique_links": 17016,
+  "scanned_at": "2026-10-18T08:15:11.247Z",
+  "previous_scan": "2026-10-11T08:16:09.200Z",
+  "links_checked": 197786,
+  "unique_links": 17037,
   "confirmed_dead": 11,
   "new_since_last_run": [],
   "resolved_since_last_run": [],
@@ -138,20 +138,11 @@
       "found_on": [
         "/book/"
       ]
-    },
-    {
-      "url": "https://www.mothresource.com/196-19-1-39.html",
-      "status": "502",
-      "internal": false,
-      "pages_affected": 1,
-      "found_on": [
-        "/dashboard-course/"
-      ]
     }
   ],
   "suppressed": {
-    "bot_protection": 41,
-    "reader_comments": 21,
+    "bot_protection": 50,
+    "reader_comments": 20,
     "not_real_urls": 9,
     "failed_confirmation": 1
   }
