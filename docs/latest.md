@@ -1,14 +1,16 @@
 # Dead link report
 
-**Scanned:** 2026-10-18T08:15:11.247Z
-**Links checked:** 197786 (17037 unique)
-**Confirmed dead:** 11
+**Scanned:** 2026-10-25T08:26:15.563Z
+**Links checked:** 198507 (17120 unique)
+**Confirmed dead:** 12
 
-## New since last run (0)
+## New since last run (1)
 
-_None._
+| Status | Link | Pages | Example |
+|---|---|---|---|
+| timeout | https://customexcelspreadsheets.com/contact-us/ | 1 | /consultants/ |
 
-## All confirmed dead (11)
+## All confirmed dead (12)
 
 | Status | Link | Pages | Example |
 |---|---|---|---|
@@ -22,6 +24,7 @@ _None._
 | 404 | **(internal)** https://www.excel-university.com/quickly-insert-the-sum-function/:censored:32:e471e4a74c:/wp-content/uploads/SUMShortcut.xlsx | 1 | /quickly-insert-the-sum-function/ |
 | 404 | **(internal)** https://www.excel-university.com/retrieve-values-from-many-workbooks/:censored:32:e471e4a74c:/wp-content/uploads/DataFiles.zip | 1 | /retrieve-values-from-many-workbooks/ |
 | TLS failure | http://www.xdrive.com/ | 1 | /articles/journal-of-acct/get-the-word-out/ |
+| timeout | https://customexcelspreadsheets.com/contact-us/ | 1 | /consultants/ |
 | 404 | https://www.microsoft.com/en-us/download/details.aspx?id=15011 | 1 | /perform-approximate-match-and-fuzzy-lookup-in-excel/ |
 
 ## Needs review - 5xx, promoted if still failing next run (3)
@@ -38,7 +41,7 @@ _None._
 
 | Reason | Count |
 |---|---|
-| Bot protection (401/403/405/429/999) | 50 |
-| Reader comment links | 20 |
+| Bot protection (401/403/405/429/999) | 42 |
+| Reader comment links | 21 |
 | Not real URLs (`http://n/a` etc.) | 9 |
 | Failed confirmation re-check | 1 |

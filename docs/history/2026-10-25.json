@@ -1,0 +1,168 @@
+{
+  "scanned_at": "2026-10-25T08:26:15.563Z",
+  "previous_scan": "2026-10-18T08:15:11.247Z",
+  "links_checked": 198507,
+  "unique_links": 17120,
+  "confirmed_dead": 12,
+  "new_since_last_run": [
+    {
+      "url": "https://customexcelspreadsheets.com/contact-us/",
+      "status": "timeout",
+      "internal": false,
+      "pages_affected": 1,
+      "found_on": [
+        "/consultants/"
+      ]
+    }
+  ],
+  "resolved_since_last_run": [],
+  "all_dead": [
+    {
+      "url": "https://www.excel-university.com/perform-approximate-match-and-fuzzy-lookup-in-excel/:censored:32:e471e4a74c:/wp-content/uploads/20130411a.png",
+      "status": "404",
+      "internal": true,
+      "pages_affected": 1,
+      "found_on": [
+        "/perform-approximate-match-and-fuzzy-lookup-in-excel/"
+      ]
+    },
+    {
+      "url": "https://www.excel-university.com/perform-approximate-match-and-fuzzy-lookup-in-excel/:censored:32:e471e4a74c:/wp-content/uploads/20130411b.png",
+      "status": "404",
+      "internal": true,
+      "pages_affected": 1,
+      "found_on": [
+        "/perform-approximate-match-and-fuzzy-lookup-in-excel/"
+      ]
+    },
+    {
+      "url": "https://www.excel-university.com/perform-approximate-match-and-fuzzy-lookup-in-excel/:censored:32:e471e4a74c:/wp-content/uploads/20130411c.png",
+      "status": "404",
+      "internal": true,
+      "pages_affected": 1,
+      "found_on": [
+        "/perform-approximate-match-and-fuzzy-lookup-in-excel/"
+      ]
+    },
+    {
+      "url": "https://www.excel-university.com/perform-approximate-match-and-fuzzy-lookup-in-excel/:censored:32:e471e4a74c:/wp-content/uploads/20130411d.png",
+      "status": "404",
+      "internal": true,
+      "pages_affected": 1,
+      "found_on": [
+        "/perform-approximate-match-and-fuzzy-lookup-in-excel/"
+      ]
+    },
+    {
+      "url": "https://www.excel-university.com/perform-approximate-match-and-fuzzy-lookup-in-excel/:censored:32:e471e4a74c:/wp-content/uploads/20130411e.png",
+      "status": "404",
+      "internal": true,
+      "pages_affected": 1,
+      "found_on": [
+        "/perform-approximate-match-and-fuzzy-lookup-in-excel/"
+      ]
+    },
+    {
+      "url": "https://www.excel-university.com/perform-approximate-match-and-fuzzy-lookup-in-excel/:censored:32:e471e4a74c:/wp-content/uploads/20130411f.png",
+      "status": "404",
+      "internal": true,
+      "pages_affected": 1,
+      "found_on": [
+        "/perform-approximate-match-and-fuzzy-lookup-in-excel/"
+      ]
+    },
+    {
+      "url": "https://www.excel-university.com/quickly-insert-the-sum-function/:censored:32:e471e4a74c:/wp-content/uploads/subtotalmacro.xls",
+      "status": "404",
+      "internal": true,
+      "pages_affected": 1,
+      "found_on": [
+        "/quickly-insert-the-sum-function/"
+      ]
+    },
+    {
+      "url": "https://www.excel-university.com/quickly-insert-the-sum-function/:censored:32:e471e4a74c:/wp-content/uploads/SUMShortcut.xlsx",
+      "status": "404",
+      "internal": true,
+      "pages_affected": 1,
+      "found_on": [
+        "/quickly-insert-the-sum-function/"
+      ]
+    },
+    {
+      "url": "https://www.excel-university.com/retrieve-values-from-many-workbooks/:censored:32:e471e4a74c:/wp-content/uploads/DataFiles.zip",
+      "status": "404",
+      "internal": true,
+      "pages_affected": 1,
+      "found_on": [
+        "/retrieve-values-from-many-workbooks/"
+      ]
+    },
+    {
+      "url": "http://www.xdrive.com/",
+      "status": "TLS failure",
+      "internal": false,
+      "pages_affected": 1,
+      "found_on": [
+        "/articles/journal-of-acct/get-the-word-out/"
+      ]
+    },
+    {
+      "url": "https://customexcelspreadsheets.com/contact-us/",
+      "status": "timeout",
+      "internal": false,
+      "pages_affected": 1,
+      "found_on": [
+        "/consultants/"
+      ]
+    },
+    {
+      "url": "https://www.microsoft.com/en-us/download/details.aspx?id=15011",
+      "status": "404",
+      "internal": false,
+      "pages_affected": 1,
+      "found_on": [
+        "/perform-approximate-match-and-fuzzy-lookup-in-excel/"
+      ]
+    }
+  ],
+  "needs_review": [
+    {
+      "url": "https://hubs.ly/Q03vvw5j0",
+      "status": "400",
+      "internal": false,
+      "pages_affected": 5,
+      "found_on": [
+        "/investment-evaluation-toolkit/",
+        "/loan-calculations-from-first-payment-to-payoff/",
+        "/modified-internal-rate-of-return-mirr/",
+        "/money-math-five/",
+        "/pivottable-auto-refresh/"
+      ]
+    },
+    {
+      "url": "http://excel-fsm.pxf.io/c/1334247/505863/8682",
+      "status": "400",
+      "internal": false,
+      "pages_affected": 1,
+      "found_on": [
+        "/pivottable-calendar/"
+      ]
+    },
+    {
+      "url": "https://www.amazon.com/s?k=excel+university+lenning",
+      "status": "503",
+      "internal": false,
+      "pages_affected": 1,
+      "found_on": [
+        "/book/"
+      ]
+    }
+  ],
+  "suppressed": {
+    "bot_protection": 42,
+    "reader_comments": 21,
+    "not_real_urls": 9,
+    "failed_confirmation": 1
+  }
+}
