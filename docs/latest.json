@@ -1,21 +1,13 @@
 {
-  "scanned_at": "2026-10-25T08:26:15.563Z",
-  "previous_scan": "2026-10-18T08:15:11.247Z",
-  "links_checked": 198507,
-  "unique_links": 17120,
-  "confirmed_dead": 12,
-  "new_since_last_run": [
-    {
-      "url": "https://customexcelspreadsheets.com/contact-us/",
-      "status": "timeout",
-      "internal": false,
-      "pages_affected": 1,
-      "found_on": [
-        "/consultants/"
-      ]
-    }
+  "scanned_at": "2026-11-01T08:25:11.098Z",
+  "previous_scan": "2026-10-25T08:26:15.563Z",
+  "links_checked": 199429,
+  "unique_links": 17198,
+  "confirmed_dead": 11,
+  "new_since_last_run": [],
+  "resolved_since_last_run": [
+    "https://customexcelspreadsheets.com/contact-us/"
   ],
-  "resolved_since_last_run": [],
   "all_dead": [
     {
       "url": "https://www.excel-university.com/perform-approximate-match-and-fuzzy-lookup-in-excel/:censored:32:e471e4a74c:/wp-content/uploads/20130411a.png",
@@ -108,15 +100,6 @@
       ]
     },
     {
-      "url": "https://customexcelspreadsheets.com/contact-us/",
-      "status": "timeout",
-      "internal": false,
-      "pages_affected": 1,
-      "found_on": [
-        "/consultants/"
-      ]
-    },
-    {
       "url": "https://www.microsoft.com/en-us/download/details.aspx?id=15011",
       "status": "404",
       "internal": false,
@@ -150,6 +133,15 @@
       ]
     },
     {
+      "url": "https://podcasts.apple.com/us/podcast/a-visit-with-the-founder-of-excel-university/id1501065666?i=1000659818564",
+      "status": "503",
+      "internal": false,
+      "pages_affected": 1,
+      "found_on": [
+        "/media/"
+      ]
+    },
+    {
       "url": "https://www.amazon.com/s?k=excel+university+lenning",
       "status": "503",
       "internal": false,
@@ -157,11 +149,29 @@
       "found_on": [
         "/book/"
       ]
+    },
+    {
+      "url": "https://www.excelcampus.com/",
+      "status": "521",
+      "internal": false,
+      "pages_affected": 1,
+      "found_on": [
+        "/tips-from-20-excel-experts/"
+      ]
+    },
+    {
+      "url": "https://www.excelcampus.com/functions/dynamic-array-formulas-spill-ranges/",
+      "status": "521",
+      "internal": false,
+      "pages_affected": 1,
+      "found_on": [
+        "/excel-2019-and-o365-ebook/"
+      ]
     }
   ],
   "suppressed": {
-    "bot_protection": 42,
-    "reader_comments": 21,
+    "bot_protection": 44,
+    "reader_comments": 24,
     "not_real_urls": 9,
     "failed_confirmation": 1
   }

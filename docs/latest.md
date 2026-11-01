@@ -1,16 +1,14 @@
 # Dead link report
 
-**Scanned:** 2026-10-25T08:26:15.563Z
-**Links checked:** 198507 (17120 unique)
-**Confirmed dead:** 12
+**Scanned:** 2026-11-01T08:25:11.098Z
+**Links checked:** 199429 (17198 unique)
+**Confirmed dead:** 11
 
-## New since last run (1)
+## New since last run (0)
 
-| Status | Link | Pages | Example |
-|---|---|---|---|
-| timeout | https://customexcelspreadsheets.com/contact-us/ | 1 | /consultants/ |
+_None._
 
-## All confirmed dead (12)
+## All confirmed dead (11)
 
 | Status | Link | Pages | Example |
 |---|---|---|---|
@@ -24,16 +22,18 @@
 | 404 | **(internal)** https://www.excel-university.com/quickly-insert-the-sum-function/:censored:32:e471e4a74c:/wp-content/uploads/SUMShortcut.xlsx | 1 | /quickly-insert-the-sum-function/ |
 | 404 | **(internal)** https://www.excel-university.com/retrieve-values-from-many-workbooks/:censored:32:e471e4a74c:/wp-content/uploads/DataFiles.zip | 1 | /retrieve-values-from-many-workbooks/ |
 | TLS failure | http://www.xdrive.com/ | 1 | /articles/journal-of-acct/get-the-word-out/ |
-| timeout | https://customexcelspreadsheets.com/contact-us/ | 1 | /consultants/ |
 | 404 | https://www.microsoft.com/en-us/download/details.aspx?id=15011 | 1 | /perform-approximate-match-and-fuzzy-lookup-in-excel/ |
 
-## Needs review - 5xx, promoted if still failing next run (3)
+## Needs review - 5xx, promoted if still failing next run (6)
 
 | Status | Link | Pages | Example |
 |---|---|---|---|
 | 400 | https://hubs.ly/Q03vvw5j0 | 5 | /investment-evaluation-toolkit/ |
 | 400 | http://excel-fsm.pxf.io/c/1334247/505863/8682 | 1 | /pivottable-calendar/ |
+| 503 | https://podcasts.apple.com/us/podcast/a-visit-with-the-founder-of-excel-university/id1501065666?i=1000659818564 | 1 | /media/ |
 | 503 | https://www.amazon.com/s?k=excel+university+lenning | 1 | /book/ |
+| 521 | https://www.excelcampus.com/ | 1 | /tips-from-20-excel-experts/ |
+| 521 | https://www.excelcampus.com/functions/dynamic-array-formulas-spill-ranges/ | 1 | /excel-2019-and-o365-ebook/ |
 
 ---
 
@@ -41,7 +41,7 @@
 
 | Reason | Count |
 |---|---|
-| Bot protection (401/403/405/429/999) | 42 |
-| Reader comment links | 21 |
+| Bot protection (401/403/405/429/999) | 44 |
+| Reader comment links | 24 |
 | Not real URLs (`http://n/a` etc.) | 9 |
 | Failed confirmation re-check | 1 |
